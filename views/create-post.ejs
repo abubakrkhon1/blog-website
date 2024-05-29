@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+<section class="create-post-main">
+    <div class="create-post-main-container">
+        <div class="create-post-text">
+            <h1>Create your post using this form!</h1>
+        </div>
+        <form action="/submit-post" method="post">
+            <div class="form-group">
+                <label for="author">Author's Name:</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="create-post-button">Submit</button>
+        </form>
+    </div>
+</section>
+<%- include("partials/footer.ejs") %>

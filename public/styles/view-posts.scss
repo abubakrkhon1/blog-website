@@ -1,0 +1,42 @@
+.view-posts-main-text{
+    margin-bottom: 20px;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 90%;
+    justify-content: space-evenly;
+    .card{
+        width: fit-content;
+        border: 1px solid black;
+        padding: 20px;
+        flex: 1 0 30%;
+        overflow-y: hidden; /* Enable vertical scrolling */
+        overflow-x: hidden;
+
+        p {
+            width: 100%; /* Ensure text wraps within the card */
+            word-wrap: break-word; /* Ensure long words break and wrap */
+        }
+        .btn-edit{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px black solid;
+            border-radius: 10px;
+            margin-top: 5px;
+            width: 60px;
+            height: 30px;
+            background-color: black;
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .btn-edit:hover{
+            background-color: #fff;
+            color: #000; 
+            }
+        }
+    }
